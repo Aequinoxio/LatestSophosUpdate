@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LatestSophosUpdate:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LatestSophosUpdate_jar</output-path>
+    <root id="archive" name="LatestSophosUpdate.jar">
+      <element id="module-output" name="LatestSophosUpdate" />
+    </root>
+  </artifact>
+</component>
