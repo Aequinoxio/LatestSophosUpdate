@@ -28,11 +28,12 @@ import java.util.Date;
 import java.util.List;
 
 public class SophosUpdate {
+    private static final String VERSION = "Latest Sophos update - v1.1 (20200321) - by GG";
     private static final String SOPHOS_URL = "https://downloads.sophos.com/downloads/info/latest_IDE.xml";
     private static final String UPDATE_FILE_EXTENSION = ".ide";
 
-    //private static final String SOPHOS_LOCAL_PATH = "C:\\Program Files (x86)\\Sophos\\Sophos Anti-Virus\\";
-    private static final String SOPHOS_LOCAL_PATH = "C:\\Users\\utente\\Downloads\\temp\\Sophos\\Sophos Anti-Virus\\";
+    private static final String SOPHOS_LOCAL_PATH = "C:\\Program Files (x86)\\Sophos\\Sophos Anti-Virus\\";
+    //private static final String SOPHOS_LOCAL_PATH = "C:\\Users\\utente\\Downloads\\temp\\Sophos\\Sophos Anti-Virus\\";
 
     // Proxy variables
     Proxy proxy = Proxy.NO_PROXY;
@@ -47,6 +48,9 @@ public class SophosUpdate {
 
     public static void main(String[] args) {
         SophosUpdate sophosUpdate = new SophosUpdate();
+
+        System.out.println(VERSION);
+
         if (sophosUpdate.parsePage()) {
             sophosUpdate.checkLocalUpdate();
         } else {
